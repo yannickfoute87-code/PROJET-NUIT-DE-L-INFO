@@ -113,3 +113,44 @@ footer {
     background: rgba(0, 0, 0, 0.7);
     font-size: 14px;
 }
+.mon-image {
+    width: 200px;   /* largeur */
+    height: auto;  /* hauteur auto */
+}
+/* LOGO (IMAGE) */
+.center-button img {
+    width: 140px;        /* taille du logo */
+    height: auto;       /* garde les proportions */
+    border-radius: 12px;/* coins légèrement arrondis */
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* léger ombre */
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.center-button img:hover {
+    transform: scale(1.1);
+}
+/* Conteneur centré (optionnel si tu veux que ce soit au milieu de la page) */
+.img-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Image stylée */
+.img-link img {
+    width: 140px;         /* taille de ton logo */
+    height: auto;
+    cursor: pointer;      /* indique que c'est cliquable */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;  /* coins arrondis optionnels */
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+/* Effet au survol */
+.img-link img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 242, 255, 1);
+}
